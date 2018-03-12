@@ -1,0 +1,448 @@
+html {
+  font-size: 16px;
+  font-family: "Calibri", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text--white {
+  color: white;
+}
+
+/* header */
+.header-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.header {
+  width: 1226px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 2rem;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__menu a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.header__menu a:hover {
+  color: gray;
+}
+/* main */
+.main-wrapper {
+  margin-top: 60px;
+}
+
+/* slider */
+.slider__item {
+  width: 100%;
+  min-width: 1226px;
+  height: 1000px;
+}
+
+.phone-black {
+  background: url("../images/sld-phone-black.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.phone-white {
+  background: url("../images/sld-phone-white.png") no-repeat center center;
+  background-size: cover;
+}
+
+.slider__text {
+  width: 1226px;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.slider__text p {
+  width: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/icon-prev.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/icon-next.png");
+}
+
+.carousel-indicators li {
+  box-shadow: 0 0 1px 0 black;
+}
+
+.carousel-indicators li.active {
+  background-color: orangered;
+}
+
+.carousel-indicators li:hover {
+  cursor: pointer;
+}
+
+/* banners */
+.banner {
+  width: 100%;
+  min-width: 1226px;
+}
+
+.banner__text {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.text__title {
+  line-height: 4rem;
+  font-size: 5rem;
+}
+
+.text__about {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.frameless-design {
+  height: 1400px;
+  background: url("../images/bg-banner-frameless-design.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.display {
+  height: 1400px;
+  background: url("../images/bg-banner-display.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.display__technology {
+  margin-top: 770px;
+  display: flex;
+  justify-content: center;
+}
+
+.technology {
+  width: 230px;
+  height: 220px;
+  margin: 0 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.technology__size {
+  height: 160px;
+  width: 190px;
+}
+
+.technology--1 {
+  background: url("../images/icons-display-tech.png") 0 0;
+}
+
+.technology--2 {
+  background: url("../images/icons-display-tech.png") 190px 0;
+}
+
+.technology--3 {
+  background: url("../images/icons-display-tech.png") 380px 0;
+}
+
+.technology--4 {
+  background: url("../images/icons-display-tech.png") 570px 0;
+}
+
+.case {
+  height: 1000px;
+  background: url("../images/bg-banner-case-white.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.hardware {
+  height: 1000px;
+  background: url("../images/bg-banner-hardware.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.camera {
+  height: 1000px;
+  background: url("../images/bg-banner-camera.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.box {
+  height: 1000px;
+  background: url("../images/bg-banner-box.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.case .banner__text,
+.box .banner__text {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.accessories {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  color: gray;
+}
+
+.accessories span {
+  padding-right: 15px;
+  padding-left: 10px;
+  border-right: 1px solid gray;
+}
+
+.accessories span:last-child {
+  border-right: none;
+}
+
+/* phone model */
+.phone-model {
+  height: 500px;
+  width: 1226px;
+  margin: 7rem auto;
+  display: flex;
+}
+
+.phone__view,
+.phone__details {
+  width: 50%;
+}
+
+.phone__view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model-3d,
+.view-image img {
+  width: 90%;
+  height: auto;
+}
+
+.view-image--hidden {
+  display: none;
+}
+
+.view__radio-group {
+  width: 70%;
+  margin-top: 1rem;
+  padding: .5rem 0;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+/* The radio-container */
+.radio-container {
+  position: relative;
+  margin-right: 40px;
+  padding-left: 35px;
+  display: block;
+  line-height: 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: orangered;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Phone details */
+.phone__details ul {
+  padding-top: 10px;
+  padding-left: 25px;
+  font-size: 1.2rem;
+}
+
+.phone__price {
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
+
+.btn-order {
+  border: none;
+  background-color: orangered;
+  color: white;
+}
+
+.btn-order:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.btn-order--sm {
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.btn-order--lg {
+  width: 300px;
+  height: 50px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/*--- Modal ---*/
+.modal {
+  font-size: 1rem;
+}
+
+.modal-dialog {
+  max-width: 400px;
+}
+
+#firstName {
+  margin-top: 1rem;
+}
+
+.modal__response {
+  display: none;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  color: green;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  color: #f0f0f0;
+}
+
+.rights {
+  font-size: .8rem;
+}
+
+.rights a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rights a:hover {
+  color: black;
+}
+
+/*--- media query ---*/
+@media (max-width: 1225px) {
+  html { font-size: 14px; }
+  .header, .banner__text, .slider__text { width: 960px; }
+  .slider__item, .slider__text { height: 750px; }
+  .slider__item, .banner { min-width: 960px; }
+  .frameless-design, .display { height: 1200px; }
+  .display__technology { margin-top: 600px; }
+  .technology { width: 200px;  height: 200px; margin: 0 10px; padding: 5px; }
+  .case, .hardware, .camera, .box { height: 800px; }
+  .phone-model { height: 400px; width: 960px; }
+}
+
+@media (max-width: 959px) {
+  html { font-size: 12px; }
+  .header, .banner__text, .slider__text { width: 769px; }
+  .text__title { line-height: 4rem; font-size: 4rem; }
+  .slider__item, .slider__text { height: 650px; }
+  .slider__item, .banner { min-width: 769px; }
+  .frameless-design { height: 900px; }
+  .display { height: 800px; }
+  .display__technology { margin-top: 320px; }
+  .display__technology div:nth-child(4) { display: none; }
+  .case, .hardware, .camera, .box { height: 600px; }
+  .phone-model { height: 400px; width: 769px; }
+  .modal-dialog .btn-order { width: 70%; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 10px; }
+  .header, .banner__text, .slider__text { width: 500px; }
+  .slider__item, .slider__text { height: 500px; }
+  .slider__item, .banner { min-width: 500px; }
+  .frameless-design { height: 600px; }
+  .display__technology div:nth-child(3) { display: none; }
+  .case, .hardware, .camera, .box { height: 500px; }
+  .phone-model { height: 300px; width: 500px; }
+  .modal-dialog .btn-order { width: 70%; }
+  .view__radio-group { display: block; }
+  .radio-container { margin-top: 20px; line-height: 1rem; }
+  .checkmark { height: 16px; width: 16px; }
+  .radio-container .checkmark:after { top: 4px; left: 4px; }
+}
